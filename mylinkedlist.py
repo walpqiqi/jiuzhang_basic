@@ -53,3 +53,25 @@ class MyLinkedList:
 
     def is_empty(self):
         return self.head is None
+
+
+if __name__ == '__main__':
+    ll = MyLinkedList()
+    ll.add(0,1)
+    ll.add(1,3)
+    ll.add(2,5)
+    ll.add(3,7)
+    
+    ll.add(0,9)
+    ll.add(1,100)
+    ll.traverse()
+
+    print(ll.get(1))
+    print(ll.get(3))
+
+    ll.set(0,-110)
+    ll.set(2,32)
+    ll.traverse()
+
+    ll.remove(2)
+    ll.traverse()
