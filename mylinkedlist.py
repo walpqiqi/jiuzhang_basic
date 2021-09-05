@@ -12,7 +12,7 @@ class MyLinkedList:
         for i in range(location):
             pre = pre.next
 
-        return pre.value
+        return pre.val
 
     def add(self, location, val):
         if location > 0:
@@ -47,7 +47,7 @@ class MyLinkedList:
     def traverse(self):
         cur = self.head
         while cur is not None:
-            print(cur.val , end='')
+            print(cur.val , end=' ')
             cur = cur.next
         print()
 
